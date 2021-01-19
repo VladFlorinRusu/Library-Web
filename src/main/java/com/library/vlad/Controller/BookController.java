@@ -12,9 +12,7 @@ public class BookController {
 
     @Autowired
     BookService patientService;
-
-
-
+/*
     @GetMapping("/getBookDetails")
     public Book getBook(@RequestParam String name ) throws InterruptedException, ExecutionException{
         return patientService.getBookDetails(name);
@@ -33,5 +31,5 @@ public class BookController {
     @DeleteMapping("/deleteBook")
     public String deleteBook(@RequestParam String name){
         return patientService.deleteBook(name);
-    }
+    }*/
 }

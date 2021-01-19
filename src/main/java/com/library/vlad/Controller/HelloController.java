@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
 @Controller
@@ -26,14 +27,19 @@ public class HelloController {
         System.out.println(book.getName());
         return "result";
     }
+/*
+    @GetMapping("/showBooks")
+    public String showBooks(Model model) throws ExecutionException, InterruptedException {
+        ArrayList<Book> books = bookService.getBooks();
+        model.getAttribute("books", books);
+        return "showBooks";
 
 
+    }
+*/
     @RequestMapping("/")
     public String index() throws ExecutionException, InterruptedException {
 
-
-        Book book = new Book("Padurea Spanzuratilor", "Liviu Rebreanu");
-        bookService.addBookToCloud(book);
         return "home";
     }
 
