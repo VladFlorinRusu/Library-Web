@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <div th:insert="../fragments/header ::head  ">&nbsp;</div>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<header>
+    <div th:insert="../fragments/navbar ::nav  ">&nbsp;</div>
+</header>
+
+
+<body>
+<form  action="#" th:action="@{/register}" th:object="${user}"
+       method="post">
+    <div class="form-group">
+        <label for="name1" class="form-label">Name</label>
+        <input class="form-control" type="text" id="name1" th:field="*{name}">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" th:field="*{email}">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" th:field="*{pass}">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
