@@ -2,6 +2,8 @@ package com.library.vlad;
 
 import java.util.Arrays;
 
+import com.library.vlad.Model.CurrentUser;
+import com.library.vlad.Model.User;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,7 +14,8 @@ import org.springframework.context.annotation.Bean;
 public class Application {
 
     public static void main(String[] args) {
-
+    User u=new User();
+    CurrentUser.getInstance().setUser(u);
         SpringApplication.run(Application.class, args);
     }
 

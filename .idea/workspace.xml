@@ -25,10 +25,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9321889e-cad6-4f45-9257-d0433ea82ef6" name="Default Changelist" comment="&quot;navbar introduced, have to work on showing the books&quot;">
+    <list default="true" id="9321889e-cad6-4f45-9257-d0433ea82ef6" name="Default Changelist" comment="&quot;changed the font colour&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fragments/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fragments/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/showBooks.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library/vlad/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/vlad/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library/vlad/Controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/vlad/Controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library/vlad/Model/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/vlad/Model/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library/vlad/Model/CurrentUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/vlad/Model/CurrentUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library/vlad/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/vlad/Model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addBook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/vlad/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/vlad/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/vlad/Controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/vlad/Controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/vlad/Model/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/vlad/Model/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/vlad/Model/CurrentUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/vlad/Model/CurrentUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/vlad/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/vlad/Model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/addBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/addBook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/result.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +59,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -66,9 +87,19 @@
     <property name="ToolWindowFlutter Outline.ShowToolbar" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/bikes" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Library\src\main\resources\fragments" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Library\src\main\resources\static" />
+      <recent name="D:\Library\src\main\resources\templates" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Application (1)">
     <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -140,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611096132691</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;changed the font colour&quot;">
+      <created>1611140734455</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611140734455</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -160,17 +198,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;navbar introduced, have to work on showing the books&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;navbar introduced, have to work on showing the books&quot;" />
+    <MESSAGE value="&quot;changed the font colour&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;changed the font colour&quot;" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1611091388678">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1613255842398">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1611091388678" />
-    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1610749007323">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1613255842398" />
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1611827340475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1610749007323" />
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1611827340475" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1613137933870">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1613137933870" />
     <state x="593" y="332" key="Github.CreateGistDialog" timestamp="1611095633221">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -179,38 +222,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="647" y="310" width="457" height="204" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1611095691088" />
-    <state width="1493" height="160" key="GridCell.Tab.0.bottom" timestamp="1611137606627">
+    <state width="1493" height="75" key="GridCell.Tab.0.bottom" timestamp="1613255868162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611137606627" />
-    <state width="1493" height="160" key="GridCell.Tab.0.center" timestamp="1611137606627">
+    <state width="1493" height="75" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613255868162" />
+    <state width="1493" height="75" key="GridCell.Tab.0.center" timestamp="1613255868162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611137606627" />
-    <state width="1493" height="160" key="GridCell.Tab.0.left" timestamp="1611137606626">
+    <state width="1493" height="75" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1613255868162" />
+    <state width="1493" height="75" key="GridCell.Tab.0.left" timestamp="1613255868162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611137606626" />
-    <state width="1493" height="160" key="GridCell.Tab.0.right" timestamp="1611137606627">
+    <state width="1493" height="75" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1613255868162" />
+    <state width="1493" height="75" key="GridCell.Tab.0.right" timestamp="1613255868162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611137606627" />
+    <state width="1493" height="75" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613255868162" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1611095619933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1611095619933" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611096139308">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611140739249">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611096139308" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611140739249" />
     <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1610876497027">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610876497027" />
-    <state x="209" y="73" key="new project wizard" timestamp="1610977729216">
+    <state x="209" y="65" key="new project wizard" timestamp="1611237414478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="209" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1610977729216" />
+    <state x="209" y="65" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1611237414478" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1611073401363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

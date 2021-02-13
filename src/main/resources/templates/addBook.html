@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
-<head>
-    <title>Library</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<div th:insert="../fragments/header ::head  ">&nbsp;</div>
 
-</head>
+<header>
+    <div th:insert="../fragments/navbar ::nav  ">&nbsp;</div>
+
+
+</header>
 <body>
-<form action="#" th:action="@{/addBook}" th:object="${book}"
-      method="post">
-    <table border="1">
-        <tr>
-            <td>Id:</td>
-            <td><input type="text" th:field="*{name}"/></td>
-        </tr>
-        <tr>
-            <td>Message:</td>
-            <td><input type="text" th:field="*{author}"/></td>
-        </tr>
-    </table>
-    <p>
-        <input type="submit" value="Submit"/> <input type="reset"
-                                                     value="Reset"/>
-    </p>
-</form>
+
+<div class="container-sm">
+    <form action="#" th:action="@{/addBook}" th:object="${book}"
+          method="post">
+        <div class="form-group">
+            <label for="name1" class="form-label">Name</label>
+            <input class="form-control" type="text" id="name1" th:field="*{name}">
+        </div>
+
+        <div class="form-group">
+            <label for="author1" class="form-label">Author</label>
+            <input class="form-control" type="text" id="author1" th:field="*{author}">
+        </div>
+
+        <div class="container">
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </div>
+
+    </form>
+</div>
+
+
 </body>
 </html>

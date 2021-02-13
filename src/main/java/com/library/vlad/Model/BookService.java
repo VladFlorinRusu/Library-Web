@@ -1,7 +1,7 @@
 package com.library.vlad.Model;
 
 import com.google.cloud.firestore.*;
-import com.library.vlad.Model.Book;
+import com.library.vlad.Model.*;
 import com.google.api.core.ApiFuture;
 import com.google.firebase.cloud.FirestoreClient;
 import org.springframework.stereotype.Service;
@@ -17,10 +17,17 @@ public class BookService {
     public static final String COL_NAME = "users";
 
 
-    public void addBookToCloud(Book book) throws ExecutionException, InterruptedException {
+    public <T> void addDataToCloud(T t) throws ExecutionException, InterruptedException {
         Firestore dbFirestore = FirestoreClient.getFirestore();
-        DocumentReference docRef = dbFirestore.collection("Books").document(book.getName());
-        ApiFuture<WriteResult> result = docRef.set(book);
+        DocumentReference docRef = null;
+        if (t instanceof Book) {
+
+            docRef = dbFirestore.collection("Books").document(((Book) t).getName());
+        } else if (t instanceof User) {
+            docRef = dbFirestore.collection("Users").document(((User) t).getEmail());
+        }
+
+        ApiFuture<WriteResult> result = docRef.set(t);
         System.out.println("Update time : " + result.get().getUpdateTime());
 
     }
@@ -41,41 +48,21 @@ public class BookService {
         return books;
     }
 
-    /*
-    public String saveBookDetails(Book book) throws InterruptedException, ExecutionException {
-        Firestore dbFirestore = FirestoreClient.getFirestore();
-        ApiFuture<WriteResult> collectionsApiFuture = dbFirestore.collection(COL_NAME).document(book.getName()).set(book);
-        return collectionsApiFuture.get().getUpdateTime().toString();
-    }
+    public User findUser(String email, String password) throws ExecutionException, InterruptedException {
+        Firestore db = FirestoreClient.getFirestore();
+        CollectionReference users = db.collection("Users");
+        Query query = users.whereEqualTo("email", email).whereEqualTo("pass", password);
+        ApiFuture<QuerySnapshot> querySnapshot = query.get();
 
-    public Book getBookDetails(String name) throws InterruptedException, ExecutionException {
-        Firestore dbFirestore = FirestoreClient.getFirestore();
-        DocumentReference documentReference = dbFirestore.collection(COL_NAME).document(name);
-        ApiFuture<DocumentSnapshot> future = documentReference.get();
+        if (querySnapshot != null) {
+            for (DocumentSnapshot document : querySnapshot.get().getDocuments()) {
+                return new User(document.getString("name"),document.getString("email"),document.getString("pass"));
+            }
 
-        DocumentSnapshot document = future.get();
-
-        Book book = null;
-
-        if (document.exists()) {
-            book = document.toObject(Book.class);
-            return book;
-        } else {
-            return null;
         }
-    }
+        return null;
 
-    public String updateBookDetails(Book person) throws InterruptedException, ExecutionException {
-        Firestore dbFirestore = FirestoreClient.getFirestore();
-        ApiFuture<WriteResult> collectionsApiFuture = dbFirestore.collection(COL_NAME).document(person.getName()).set(person);
-        return collectionsApiFuture.get().getUpdateTime().toString();
-    }
 
-    public String deleteBook(String name) {
-        Firestore dbFirestore = FirestoreClient.getFirestore();
-        ApiFuture<WriteResult> writeResult = dbFirestore.collection(COL_NAME).document(name).delete();
-        return "Document with Book ID " + name + " has been deleted";
-    }
-*/
 
+    }
 }
